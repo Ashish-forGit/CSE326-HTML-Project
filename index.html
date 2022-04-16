@@ -14,7 +14,7 @@
     <script>
         function f1()
         {
-            Window.location.href="/login.html";
+            alert("Invalid Input");
         }
     </script>
     
@@ -38,8 +38,13 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact Me</a>
+                        <a class="nav-link" href="contact.html">Contact Me</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="request.html">Request For Blog</a>
+                    </li>
+                   
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,17 +61,19 @@
                             <li><a class="dropdown-item" href="#">COMMING SOON...</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="sign.html">Sign-in</a>
+                    </li>
 
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                    <button class="btn btn-outline-danger" type="submit" onclick="f1()" >Search</button>
                 </form>
-                <div class="mx-2">
-                    <button class="btn btn-danger" data-toggle="modal" onclick="login()">Log In</button>
-                    <button class="btn btn-danger" data-toggle="modal" data-target="# 2">Sign Up</button>
-                    
-                </div>
+                 
             </div>
         </div>
     </nav>
